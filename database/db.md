@@ -15,7 +15,7 @@ A partir de là, comment penser notre BDD ?
 3 tables coeurs : painting, artist, exhibition
 2 tables indépendantes : user, post
 
-Attention, vous pourriez avoir des logiques relationnelles avec des entités similaires, tout dépend de la finalité de vos données 
+Attention, vous pourriez avoir des logiques relationnelles différentes avec des entités similaires, tout dépend de la finalité de vos données 
 et de votre site !
 
 Une fois ma BDD modélisée et validée, que faire ?
