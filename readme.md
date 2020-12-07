@@ -6,7 +6,7 @@ Instruction:
 4. followed by npm i
 
 5. create .env file to hide your db credetials as following: 
-PORT=300?
+PORT=5000
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=pasword
