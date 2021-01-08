@@ -8,4 +8,8 @@ const router = require('./routes/index.routes');
 app.use(cors());
 app.use('/api', router);
 
+app.get("/", (req, res) => {
+    res.send("Welcome to my checkpoint !")
+})
+
 module.exports = app;
