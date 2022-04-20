@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Simba",
+        "species": "Lion",
+        "age": 8,
+        "description": "I am a lion, roar!",
+        "picture": "https://lemagdesanimaux.ouest-france.fr/images/dossiers/2020-03/mini/lion-072746-650-400.jpg"
+    }
+]
