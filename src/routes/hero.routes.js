@@ -7,9 +7,9 @@ const router = require("express").Router();
 // une requête sql qui correspond à mes besoins : ici lire les animaux
 // de l'entité animal de la bdd
 router.get("/", (req, res) => {
-  connection.query("SELECT * FROM animal", (err, result) => {
+  connection.query("SELECT * FROM hero", (err, result) => {
     if (err) {
-      res.status(500).send("Error retrieving animals from database");
+      res.status(500).send("Error retrieving heroes from database");
     } else {
       res.json(result);
     }
@@ -17,34 +17,43 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-  const animalId = req.params.id;
+  const heroId = req.params.id;
   connection.query(
-    "SELECT * FROM animal WHERE id = ?",
-    [animalId],
+    "SELECT * FROM hero WHERE id = ?",
+    [heroId],
     (err, results) => {
       if (err) {
-        res.status(500).send("Error retrieving animal from database");
+        res.status(500).send("Error retrieving hero from database");
       } else {
         if (results.length) res.json(results[0]);
-        else res.status(404).send("Animal not found");
+        else res.status(404).send("Hero not found");
       }
     }
   );
 });
 
 router.post("/", (req, res) => {
-  const { name, species, age, description, picture } = req.body;
+  const { name, picture, speed, strength, stamina, gender, race } = req.body;
   connection.query(
-    "INSERT INTO animal (name, species, age, description, picture) VALUES (?, ?, ?, ?, ?)",
-    [name, species, age, description, picture],
+    "INSERT INTO hero (name, picture, speed, strength, stamina, gender, race) VALUES (?, ?, ?, ?, ?)",
+    [name, picture, speed, strength, stamina, gender, race],
     (err, result) => {
       if (err) {
         console.error(err);
-        res.status(500).send("Error saving the animal");
+        res.status(500).send("Error saving the hero");
       } else {
         const id = result.insertId;
-        const createdAnimal = { id, name, species, age, description, picture };
-        res.status(201).json(createdAnimal);
+        const createdHero = {
+          id,
+          name,
+          picture,
+          speed,
+          strength,
+          stamina,
+          gender,
+          race,
+        };
+        res.status(201).json(createdHero);
       }
     }
   );

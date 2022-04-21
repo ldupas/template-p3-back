@@ -1,10 +1,12 @@
 [
-    {
-        "id": 1,
-        "name": "Simba",
-        "species": "Lion",
-        "age": 8,
-        "description": "I am a lion, roar!",
-        "picture": "https://lemagdesanimaux.ouest-france.fr/images/dossiers/2020-03/mini/lion-072746-650-400.jpg"
-    }
+  {
+    "id": "",
+    "name": "Ant-Man",
+    "picture": "https://zupimages.net/up/20/46/9sjo.png",
+    "speed": 23,
+    "strength": 42,
+    "stamina": 81,
+    "gender": "Male",
+    "race": "Human"
+  }
 ]

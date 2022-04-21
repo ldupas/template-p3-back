@@ -2,16 +2,18 @@ CREATE DATABASE projet2;
 
 USE projet2;
 
-CREATE TABLE animal (
+CREATE TABLE hero (
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     name VARCHAR(100) NOT NULL,
-    species VARCHAR(100) NOT NULL,
-    age INT NOT NULL,
-    description TEXT,
-    picture VARCHAR(255)
+    picture VARCHAR(255),
+    speed INT NOT NULL,
+    strength INT NOT NULL,
+    stamina INT NOT NULL,
+    gender VARCHAR(100) NOT NULL,
+    race VARCHAR(100) NOT NULL
 );
 
-INSERT INTO animal (name, species, age, description, picture)
+INSERT INTO hero (name, picture, speed, strength, stamina, gender, race)
 VALUES
-('Simba', 'Lion', 8, 'I am a lion, roar!', 'https://lemagdesanimaux.ouest-france.fr/images/dossiers/2020-03/mini/lion-072746-650-400.jpg');
+('Ant-Man','https://zupimages.net/up/20/46/9sjo.png', 23, 42, 81, 'Male', 'Human');
 
