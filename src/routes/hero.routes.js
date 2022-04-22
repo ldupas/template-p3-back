@@ -35,7 +35,7 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   const { name, picture, speed, strength, stamina, gender, race } = req.body;
   connection.query(
-    "INSERT INTO hero (name, picture, speed, strength, stamina, gender, race) VALUES (?, ?, ?, ?, ?)",
+    "INSERT INTO hero (name, picture, speed, strength, stamina, gender, race) VALUES (?, ?, ?, ?, ?, ?, ?)",
     [name, picture, speed, strength, stamina, gender, race],
     (err, result) => {
       if (err) {
