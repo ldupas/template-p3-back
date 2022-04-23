@@ -1,12 +1,272 @@
 [
   {
-    "id": 1,
     "name": "Ant-Man",
     "picture": "https://zupimages.net/up/20/46/9sjo.png",
     "speed": 23,
     "strength": 42,
     "stamina": 81,
     "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Batgirl",
+    "picture": "https://zupimages.net/up/20/45/1foq.png",
+    "speed": 33,
+    "strength": 85,
+    "stamina": "40",
+    "gender": "Female",
+    "race": "Human"
+  },
+  {
+    "name": "Batman",
+    "picture": "https://zupimages.net/up/20/45/q0kq.png",
+    "speed": "29",
+    "strength": "83",
+    "stamina": "63",
+    "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Black Widow",
+    "picture": "https://zupimages.net/up/20/46/twkj.png",
+    "speed": "33",
+    "strength": "13",
+    "stamina": "86",
+    "gender": "Female",
+    "race": "Human"
+  },
+  {
+    "name": "Black Panther",
+    "picture": "https://zupimages.net/up/20/45/eg1f.png",
+    "speed": "30",
+    "strength": "51",
+    "stamina": "81",
+    "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Bumblebee",
+    "picture": "https://zupimages.net/up/20/46/30w7.png",
+    "speed": "55",
+    "strength": "99",
+    "stamina": "75",
+    "gender": "Male",
+    "race": "Robot"
+  },
+  {
+    "name": "Captain America",
+    "picture": "https://zupimages.net/up/20/47/t70s.png",
+    "speed": "38",
+    "strength": "86",
+    "stamina": "55",
+    "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Catwoman",
+    "picture": "https://zupimages.net/up/20/45/ku3m.png",
+    "speed": "33",
+    "strength": "45",
+    "stamina": "87",
+    "gender": "Female",
+    "race": "Human"
+  },
+  {
+    "name": "Chuck Norris",
+    "picture": "https://zupimages.net/up/20/46/q5g9.png",
+    "speed": "47",
+    "strength": "100",
+    "stamina": "80",
+    "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Daredevil",
+    "picture": "https://zupimages.net/up/20/45/35em.png",
+    "speed": "82",
+    "strength": "61",
+    "stamina": "35",
+    "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Deadpool",
+    "picture": "https://zupimages.net/up/20/47/ie06.png",
+    "speed": "50",
+    "strength": "32",
+    "stamina": "100",
+    "gender": "Male",
+    "race": "Mutant"
+  },
+  {
+    "name": "Elastigirl",
+    "picture": "https://zupimages.net/up/20/46/lpdr.png",
+    "speed": "86",
+    "strength": "32",
+    "stamina": "80",
+    "gender": "Female",
+    "race": "Human"
+  },
+  {
+    "name": "Flash",
+    "picture": "https://zupimages.net/up/20/47/e77d.jpg",
+    "speed": "100",
+    "strength": "50",
+    "stamina": "23",
+    "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Harley Quinn",
+    "picture": "https://zupimages.net/up/20/47/117o.png",
+    "speed": "33",
+    "strength": "12",
+    "stamina": "90",
+    "gender": "Female",
+    "race": "Human"
+  },
+  {
+    "name": "Hellboy",
+    "picture": "https://zupimages.net/up/20/45/nv9p.png",
+    "speed": "21",
+    "strength": "86",
+    "stamina": "75",
+    "gender": "Male",
+    "race": "Deamon"
+  },
+  {
+    "name": "Hulk",
+    "picture": "https://zupimages.net/up/20/46/pl78.png",
+    "speed": "63",
+    "strength": "99",
+    "stamina": "75",
+    "gender": "Male",
+    "race": "Radiation"
+  },
+  {
+    "name": "Iron Man",
+    "picture": "https://zupimages.net/up/20/45/o7ov.png",
+    "speed": "58",
+    "strength": "100",
+    "stamina": "76",
+    "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Joker",
+    "picture": "https://zupimages.net/up/20/46/89gj.png",
+    "speed": "10",
+    "strength": "12",
+    "stamina": "82",
+    "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Judge Dredd",
+    "picture": "https://zupimages.net/up/20/46/kxev.png",
+    "speed": "50",
+    "strength": "87",
+    "stamina": "80",
+    "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Kick-Ass",
+    "picture": "https://www.zupimages.net/up/20/44/t1qm.png",
+    "speed": "25",
+    "strength": "30",
+    "stamina": "84",
+    "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Legolas",
+    "picture": "https://zupimages.net/up/20/46/m359.png",
+    "speed": "45",
+    "strength": "22",
+    "stamina": "90",
+    "gender": "Male",
+    "race": "Elfe"
+  },
+  {
+    "name": "Mystique",
+    "picture": "https://zupimages.net/up/20/46/1cm3.png",
+    "speed": "23",
+    "strength": "12",
+    "stamina": "81",
+    "gender": "Male",
+    "race": "Mutant"
+  },
+  {
+    "name": "Rocket",
+    "picture": "https://zupimages.net/up/20/46/lknj.png",
+    "speed": "56",
+    "strength": "5",
+    "stamina": "86",
+    "gender": "Male",
+    "race": "Racoon"
+  },
+  {
+    "name": "Spider-Man",
+    "picture": "https://zupimages.net/up/20/45/v9zn.png",
+    "speed": "86",
+    "strength": "55",
+    "stamina": "85",
+    "gender": "Male",
+    "race": "Arachnid"
+  },
+  {
+    "name": "Superman",
+    "picture": "https://zupimages.net/up/20/45/u5ff.png",
+    "speed": "100",
+    "strength": "75",
+    "stamina": "40",
+    "gender": "Male",
+    "race": "Kryptonian"
+  },
+  {
+    "name": "Super Steph",
+    "picture": "https://zupimages.net/up/22/16/frfy.jpeg",
+    "speed": "99",
+    "strength": "70",
+    "stamina": "80",
+    "gender": "Female",
+    "race": "Javascript"
+  },
+  {
+    "name": "Thor",
+    "picture": "https://zupimages.net/up/20/46/banj.png",
+    "speed": "65",
+    "strength": "90",
+    "stamina": "76",
+    "gender": "Male",
+    "race": "Asgardian"
+  },
+  {
+    "name": "War Machine",
+    "picture": "https://zupimages.net/up/20/46/ikor.png",
+    "speed": "78",
+    "strength": "76",
+    "stamina": "100",
+    "gender": "Male",
+    "race": "Human"
+  },
+  {
+    "name": "Wolverine",
+    "picture": "https://zupimages.net/up/20/45/not6.png",
+    "speed": "51",
+    "strength": "40",
+    "stamina": "100",
+    "gender": "Male",
+    "race": "Mutant"
+  },
+  {
+    "name": "Wonder Woman",
+    "picture": "https://zupimages.net/up/20/45/nu42.png",
+    "speed": "86",
+    "strength": "76",
+    "stamina": "80",
+    "gender": "Female",
     "race": "Human"
   }
 ]
