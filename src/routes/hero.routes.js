@@ -19,7 +19,7 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   const heroId = req.params.id;
   connection.query(
-    "SELECT * FROM hero WHERE id = ?",
+    "SELECT * FROM hero WHERE id=?",
     [heroId],
     (err, results) => {
       if (err) {
@@ -33,10 +33,11 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  const { name, picture, speed, strength, stamina, gender, race } = req.body;
+  const { name, picture, speed, strength, stamina, gender, race, price } =
+    req.body;
   connection.query(
-    "INSERT INTO hero (name, picture, speed, strength, stamina, gender, race) VALUES (?, ?, ?, ?, ?, ?, ?)",
-    [name, picture, speed, strength, stamina, gender, race],
+    "INSERT INTO hero (name, picture, speed, strength, stamina, gender, race, price) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+    [name, picture, speed, strength, stamina, gender, race, price],
     (err, result) => {
       if (err) {
         console.error(err);
@@ -52,11 +53,49 @@ router.post("/", (req, res) => {
           stamina,
           gender,
           race,
+          price,
         };
         res.status(201).json(createdHero);
       }
     }
   );
+
+  router.put("/:id", (req, res) => {
+    const heroId = req.params.id;
+    const db = connection.promise();
+    let existingHero = null;
+    db.query("SELECT * FROM hero WHERE id = ?", [heroId])
+      .then(([results]) => {
+        existingHero = results[0];
+        if (!existingHero) return Promise.reject("RECORD_NOT_FOUND");
+        return db.query("UPDATE hero SET ? WHERE id = ?", [req.body, heroId]);
+      })
+      .then(() => {
+        res.status(200).json({ ...existingHero, ...req.body });
+      })
+      .catch((err) => {
+        console.error(err);
+        if (err === "RECORD_NOT_FOUND")
+          res.status(404).send(`Hero with id ${heroId} not found.`);
+        else res.status(500).send("Error updating an hero");
+      });
+  });
+
+  router.delete("/:id", (req, res) => {
+    connection.query(
+      "DELETE FROM hero WHERE id = ?",
+      [req.params.id],
+      (err, result) => {
+        if (err) {
+          console.log(err);
+          res.status(500).send("Error deleting an hero");
+        } else {
+          if (result.affectedRows) res.status(200).send("🎉 Hero deleted!");
+          else res.status(404).send("Hero not found.");
+        }
+      }
+    );
+  });
 });
 
 module.exports = router;
