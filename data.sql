@@ -10,10 +10,11 @@ CREATE TABLE hero (
     strength INT NOT NULL,
     stamina INT NOT NULL,
     gender VARCHAR(100) NOT NULL,
-    race VARCHAR(100) NOT NULL
+    race VARCHAR(100) NOT NULL,
+    price INT NOT NULL
 );
 
-INSERT INTO hero (name, picture, speed, strength, stamina, gender, race)
+INSERT INTO hero (name, picture, speed, strength, stamina, gender, race, price)
 VALUES
-('Ant-Man','https://zupimages.net/up/20/46/9sjo.png', 23, 42, 81, 'Male', 'Human');
+('Ant-Man','https://zupimages.net/up/20/46/9sjo.png', 23, 42, 81, 'Male', 'Human',32);
 
