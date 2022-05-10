@@ -64,11 +64,11 @@ router.post("/", (req, res) => {
     const heroId = req.params.id;
     const db = connection.promise();
     let existingHero = null;
-    db.query("SELECT * FROM hero WHERE id = ?", [heroId])
+    db.query('SELECT * FROM hero WHERE id=?', [heroId])
       .then(([results]) => {
         existingHero = results[0];
         if (!existingHero) return Promise.reject("RECORD_NOT_FOUND");
-        return db.query("UPDATE hero SET ? WHERE id = ?", [req.body, heroId]);
+        return db.query('UPDATE hero SET ? WHERE id=?', [req.body, heroId]);
       })
       .then(() => {
         res.status(200).json({ ...existingHero, ...req.body });
