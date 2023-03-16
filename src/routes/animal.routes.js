@@ -1,11 +1,6 @@
 const connection = require('../db-config');
 const router = require('express').Router();
 
-// sur le router, on associe 3 choses : le verbe d'action qui est ici get 
-// pour lire l'info
-// le chemin qui est /, sous entendu localhost:8000/api/animals/
-// une requête sql qui correspond à mes besoins : ici lire les animaux 
-// de l'entité animal de la bdd
 router.get('/', (req, res) => {
     connection.query('SELECT * FROM animal', (err, result) => {
       if (err) {
