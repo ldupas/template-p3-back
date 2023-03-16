@@ -1,6 +1,6 @@
-CREATE DATABASE projet2;
+CREATE DATABASE mydbname;
 
-USE projet2;
+USE mydbname;
 
 CREATE TABLE animal (
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
