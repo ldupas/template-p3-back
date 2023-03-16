@@ -50,7 +50,7 @@ router.post('/', (req, res) => {
     // Corps de ma requête = propriétés de ma table DB
     // (au moins, ce qui est en NOT NULL par défaut)
     const { name, price, description, picture } = req.body;
-connection.query(
+    connection.query(
     'INSERT INTO product (name, price, description, picture) VALUES (?, ?, ?, ?)',
     [name, price, description, picture],
     (err, result) => {
